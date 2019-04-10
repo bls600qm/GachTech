@@ -48,8 +48,35 @@ class ResultViewController: UIViewController {
             haikeiImageView.image = UIImage(named: "bg_red@2x.png")!
         }
     }
-    
+    //このResultViewControllerがよ表示されるたびに呼び出すメソッド
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        //アニメーションの中でもtransformさせるキーパスを設定
+        let animation = CABasicAnimation(keyPath: "transform")
+        
+        //アニメーション開始時の数値
+        animation.fromValue = NSNumber(value: 0)
+        
+        //アニメーション終了時の数値 M_PIは180度のこと
+        animation.toValue = NSNumber(value: 2 * Double.pi)
+        
+        //Z軸を中心としたアニメーションにする
+        animation.valueFunction = CAValueFunction(name: CAValueFunctionName.rotateZ)
+        
+        //アニメーションの速さを指定する
+        animation.duration = 5
+        
+        //アニメーションを何回繰り返すか決める
+        animation.repeatCount = Float.infinity
+        
+        //どのレイヤーをアニメーションさせるか決める
+        haikeiImageView.layer.add(animation, forKey: nil)
+    }
 
+    @IBAction func modoru(){
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

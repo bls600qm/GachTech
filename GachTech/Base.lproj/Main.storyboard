@@ -69,6 +69,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="modoru" destination="8hm-cB-tQ0" eventType="touchUpInside" id="wT8-pt-xq3"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="Jdd-kk-oz2"/>
                                 </connections>
                             </button>
