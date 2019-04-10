@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="dQA-IL-OGJ">
             <objects>
-                <viewController id="8hm-cB-tQ0" sceneMemberID="viewController">
+                <viewController id="8hm-cB-tQ0" customClass="ResultViewController" customModule="GachTech" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zj6-lh-dn5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +76,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UyE-U1-JlB"/>
                     </view>
+                    <connections>
+                        <outlet property="haikeiImageView" destination="4Cc-fV-scy" id="ifr-Sc-LW9"/>
+                        <outlet property="monsterImageView" destination="bZ7-i0-RSs" id="t41-TU-8bS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0v-jd-hxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

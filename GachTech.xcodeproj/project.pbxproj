@@ -28,6 +28,7 @@
 		9783901D225DEFCB00748DF4 /* monster001.png in Resources */ = {isa = PBXBuildFile; fileRef = 9783900F225DEFCB00748DF4 /* monster001.png */; };
 		9783901E225DEFCB00748DF4 /* monster009.png in Resources */ = {isa = PBXBuildFile; fileRef = 97839010225DEFCB00748DF4 /* monster009.png */; };
 		9783901F225DEFCB00748DF4 /* monster008.png in Resources */ = {isa = PBXBuildFile; fileRef = 97839011225DEFCB00748DF4 /* monster008.png */; };
+		97839021225DF60300748DF4 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97839020225DF60300748DF4 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		9783900F225DEFCB00748DF4 /* monster001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster001.png; sourceTree = "<group>"; };
 		97839010225DEFCB00748DF4 /* monster009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster009.png; sourceTree = "<group>"; };
 		97839011225DEFCB00748DF4 /* monster008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster008.png; sourceTree = "<group>"; };
+		97839020225DF60300748DF4 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				97838FD3225DEF9100748DF4 /* AppDelegate.swift */,
 				97838FD5225DEF9100748DF4 /* ViewController.swift */,
 				97838FD7225DEF9100748DF4 /* Main.storyboard */,
+				97839020225DF60300748DF4 /* ResultViewController.swift */,
 				97838FDA225DEF9200748DF4 /* Assets.xcassets */,
 				97838FDC225DEF9200748DF4 /* LaunchScreen.storyboard */,
 				97838FDF225DEF9200748DF4 /* Info.plist */,
@@ -338,6 +341,7 @@
 			files = (
 				97838FD6225DEF9100748DF4 /* ViewController.swift in Sources */,
 				97838FD4225DEF9100748DF4 /* AppDelegate.swift in Sources */,
+				97839021225DF60300748DF4 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
