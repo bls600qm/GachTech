@@ -17,14 +17,36 @@ class ResultViewController: UIViewController {
     //モンスター画像を保存しておく入れる
     var monsterArray: [UIImage]!
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
-        // Do any additional setup after loading the view.
+        //0~9の間で乱数出す
+        let number = Int.random(in: 0..<10)
+        
+        //モンスターの画像を10枚追加する
+        monsterArray = [UIImage(named: "monster001.png")!,
+                        UIImage(named: "monster002.png")!,
+                        UIImage(named: "monster003.png")!,
+                        UIImage(named: "monster004.png")!,
+                        UIImage(named: "monster005.png")!,
+                        UIImage(named: "monster006.png")!,
+                        UIImage(named: "monster007.png")!,
+                        UIImage(named: "monster008.png")!,
+                        UIImage(named: "monster009.png")!,
+                        UIImage(named: "monster010.png")!]
+        
+        //ランダムに選んだモンスターを表示する
+        monsterImageView.image = monsterArray[number]
+        
+        //背景画像をモンスターによって切り替える
+        
+        if number == 9 {
+            haikeiImageView.image = UIImage(named: "bg_gold@2x.png")!
+        } else if number > 6 {
+            haikeiImageView.image = UIImage(named: "bg_blue@2x.png")!
+        } else {
+            haikeiImageView.image = UIImage(named: "bg_red@2x.png")!
+        }
     }
     
 
